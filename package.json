@@ -2,6 +2,9 @@
   "name": "theming-examples",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=18.17.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -13,6 +16,7 @@
     "clsx": "^2.0.0",
     "lucide-react": "^0.292.0",
     "next": "14.0.1",
+    "next-themes": "^0.2.1",
     "react": "^18",
     "react-dom": "^18",
     "tailwind-merge": "^2.0.0",
