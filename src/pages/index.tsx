@@ -1,5 +1,3 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
 import { useTheme } from "next-themes";
 import {
   DropdownMenu,
@@ -9,8 +7,6 @@ import {
 } from "~/components/ui/dropdown-menu";
 import { Sun, Moon } from "lucide-react";
 import { Button } from "~/components/ui/button";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const { setTheme } = useTheme();
@@ -37,6 +33,9 @@ export default function Home() {
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
+      <div className="my-4">
+        <p className="">This is a text</p>
+      </div>
     </div>
   );
 }
