@@ -217,6 +217,13 @@ export default function Home() {
           />
         </div>
       </section>
+      <hr className="my-4" />
+      <section className="flex flex-wrap gap-4">
+        <div className="font-mono">
+          <div className="w-12 h-12 mb-2 rounded-sm bg-primary" />
+          <p className="text-xs lowercase text-slate-500">--radius</p>
+        </div>
+      </section>
     </main>
   );
 }
