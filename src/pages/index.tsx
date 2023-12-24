@@ -224,6 +224,12 @@ export default function Home() {
           <p className="text-xs lowercase text-slate-500">--radius</p>
         </div>
       </section>
+      <hr className="my-4" />
+      <section className="flex flex-wrap gap-4">
+        <p className="font-mono">font-mono</p>
+        <p className="font-sans">font-sans</p>
+        <p className="font-serif">font-serif</p>
+      </section>
     </main>
   );
 }
