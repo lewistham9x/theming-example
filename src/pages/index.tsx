@@ -43,7 +43,27 @@ export default function Home() {
         </DropdownMenu>
         <p>{theme}</p>
       </div>
-      <section className="flex flex-wrap gap-4 mt-4">
+      <section className="mt-4">
+        <h1>How to use:</h1>
+        <ol className="ml-4 list-decimal">
+          <li>Click the sun button to switch between light & dark mode</li>
+          <li>-- denotes the variable name defined in global.css</li>
+          <li>
+            Perform a Ctrl+F in tailwind.config.js to see how the variable is
+            being used
+          </li>
+          <li>
+            Underlined text displays the active color being applied to the
+            rectangle element
+          </li>
+          <li>
+            Most of it depicts the color scheme of the theme, but some of it
+            also depicts other variables like border-radius, font-family, etc.
+          </li>
+        </ol>
+      </section>
+      <hr className="my-4" />
+      <section className="flex flex-wrap gap-4">
         <DisplayElement
           variableName="--border"
           variableValue={{
