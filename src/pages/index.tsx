@@ -212,6 +212,8 @@ export default function Home() {
         <p className="font-mono">font-mono</p>
         <p className="font-sans">font-sans</p>
         <p className="font-serif">font-serif</p>
+        <p className="font-rubik-scribble">font-rubik-scribble</p>
+        <p className="font-sevillana">font-sevillana</p>
       </section>
     </main>
   );
