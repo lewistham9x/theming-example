@@ -10,7 +10,6 @@ import {
 } from "~/components/common/icons";
 import { Navbar } from "~/components/common/navbar";
 import { Button, buttonVariants } from "~/components/ui/button";
-import { cn } from "~/lib/utils";
 export const siteConfig = {
   name: "Taxonomy",
   description:
@@ -64,6 +63,30 @@ export default function Example() {
   return (
     <main className="p-4">
       <Navbar />
+      <section>
+        <p>
+          There is a lot of tailwind classes here and the components, but just{" "}
+          <br />
+          focus on the color related class which are usually denoted with <br />{" "}
+          bg-* or text-* and the preceding names can be found in{" "}
+          <span className="font-mono">tailwind.config.js:</span>
+        </p>
+        <br />
+        <ol className="ml-4 list-decimal">
+          <li>bg-muted, text-muted-foreground</li>
+          <li>border</li>
+          <li>bg-background, </li>
+          <li>text-primary-foreground, text-primary </li>
+          <li>text-destructive-foreground </li>
+          <li>text-accent-foreground, </li>
+          <li>text-secondary-foreground </li>
+        </ol>
+        <br />
+        <p>
+          Please also do a Ctrl+Shift+F on the variables to see where else it is
+          being used
+        </p>
+      </section>
       <section className="pt-6 pb-8 space-y-6 md:pb-12 md:pt-10 lg:py-32">
         <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center">
           <Link
