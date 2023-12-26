@@ -208,12 +208,22 @@ export default function Home() {
         </div>
       </section>
       <hr className="my-4" />
-      <section className="flex flex-wrap gap-4">
-        <p className="font-mono">font-mono</p>
-        <p className="font-sans">font-sans</p>
-        <p className="font-serif">font-serif</p>
-        <p className="font-rubik-scribble">font-rubik-scribble</p>
-        <p className="font-sevillana">font-sevillana</p>
+      <section className="flex gap-4">
+        <div>
+          <h1 className="text-lg">By Tailwind</h1>
+          <div>
+            <p className="font-mono">font-mono</p>
+            <p className="font-sans">font-sans</p>
+            <p className="font-serif">font-serif</p>
+          </div>
+        </div>
+        <div>
+          <h1 className="text-lg">Custom fonts</h1>
+          <div>
+            <p className="font-rubik-scribble">font-rubik-scribble</p>
+            <p className="font-sevillana">font-sevillana</p>
+          </div>
+        </div>
       </section>
     </main>
   );
