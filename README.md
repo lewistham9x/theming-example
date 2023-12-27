@@ -2,7 +2,23 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+### Installing the correct node version
+
+This repo requires node >= 18.17.0. If you have nvm installed, you can run `nvm use` to switch to the correct version. If you don't have nvm installed, you can install it [here](https://github.com/nvm-sh/nvm)
+
+### Installing a package manager
+
+This repo uses [pnpm](https://pnpm.io/) as a package manager. If you don't have pnpm installed, you can install it [here](https://pnpm.io/installation).
+
+### Starting development server
+
+First, install packages by running:
+
+```bash
+pnpm install
+```
+
+Finally, run the development server:
 
 ```bash
 npm run dev
