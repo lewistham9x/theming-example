@@ -19,6 +19,7 @@ module.exports = {
       fontFamily: {
         "rubik-scribble": "var(--rubik-scribble)",
         sevillana: "var(--sevillana)",
+        "custom-font": "var(--custom-font)",
       },
       colors: {
         border: "hsl(var(--border))",

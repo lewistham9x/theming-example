@@ -220,8 +220,7 @@ export default function Home() {
         <div>
           <h1 className="text-lg">Custom fonts</h1>
           <div>
-            <p className="font-rubik-scribble">font-rubik-scribble</p>
-            <p className="font-sevillana">font-sevillana</p>
+            <p className="font-custom-font">Rubik Scribble</p>
           </div>
         </div>
       </section>

@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap");
 
-@font-face {
+/* @font-face {
   font-family: "Sevillana";
   src: url("/fonts/Sevillana-Regular.ttf");
-}
+} */
 
 @tailwind base;
 @tailwind components;
@@ -40,8 +40,7 @@
     --ring: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
-    --rubik-scribble: "Rubik Scribble", serif;
-    --sevillana: "Sevillana", serif;
+    --custom-font: "Rubik Scribble", serif;
   }
 
   .dark {
@@ -80,6 +79,6 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-custom-font;
   }
 }
