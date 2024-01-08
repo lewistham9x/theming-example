@@ -10,6 +10,7 @@ import {
 } from "~/components/common/icons";
 import { Navbar } from "~/components/common/navbar";
 import { Button, buttonVariants } from "~/components/ui/button";
+import DashboardPage from "~/examples/dashboard/page";
 export const siteConfig = {
   name: "Taxonomy",
   description:
@@ -63,87 +64,7 @@ export default function Example() {
   return (
     <main className="p-4">
       <Navbar />
-      <section>
-        <p>
-          There is a lot of tailwind classes here and the components, but just{" "}
-          <br />
-          focus on the color related class which are usually denoted with <br />{" "}
-          bg-* or text-* and the preceding names can be found in{" "}
-          <span className="font-mono">tailwind.config.js:</span>
-        </p>
-        <br />
-        <ol className="ml-4 list-decimal">
-          <li>bg-muted, text-muted-foreground</li>
-          <li>border</li>
-          <li>bg-background, </li>
-          <li>text-primary-foreground, text-primary </li>
-          <li>text-destructive-foreground </li>
-          <li>text-accent-foreground, </li>
-          <li>text-secondary-foreground </li>
-        </ol>
-        <br />
-        <p>
-          Please also do a Ctrl+Shift+F on the variables to see where else it is
-          being used
-        </p>
-      </section>
-      <section className="pt-6 pb-8 space-y-6 md:pb-12 md:pt-10 lg:py-32">
-        <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center">
-          <Link
-            href={siteConfig.links.twitter}
-            className="rounded-2xl bg-muted px-4 py-1.5 text-sm font-medium"
-            target="_blank"
-          >
-            Follow along on Twitter
-          </Link>
-          <h1 className="text-3xl font-heading sm:text-5xl md:text-6xl lg:text-7xl">
-            An example app built using Next.js 13 server components.
-          </h1>
-          <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
-            I&apos;m building a web app with Next.js 13 and open sourcing
-            everything. Follow along as we figure this out together.
-          </p>
-          <div className="space-x-4">
-            <Link href="/login" passHref>
-              <Button size="lg">Get Started</Button>
-            </Link>
-            <Link
-              href={siteConfig.links.github}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Button size={"lg"} variant={"outline"}>
-                GitHub
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-      <section
-        id="features"
-        className="container py-8 space-y-6 bg-slate-50 dark:bg-transparent md:py-12 lg:py-24"
-      >
-        <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
-          <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
-            Features
-          </h2>
-          <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-            This project is an experiment to see how a modern app, with features
-            like auth, subscriptions, API routes, and static pages would work in
-            Next.js 13 app dir.
-          </p>
-        </div>
-        <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3">
-          {CARD_CONFIG.map((config, index) => (
-            <Card
-              key={index}
-              title={config.title}
-              description={config.description}
-              icon={config.icon}
-            />
-          ))}
-        </div>
-      </section>
+      <DashboardPage />
     </main>
   );
 }
