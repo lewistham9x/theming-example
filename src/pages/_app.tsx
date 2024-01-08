@@ -1,7 +1,7 @@
 import "~/styles/globals.css";
 import type { AppProps } from "next/app";
-import { ThemeProvider } from "~/components/theme-provider";
 import { useState, useEffect } from "react";
+import { ThemeProvider } from "~/components/theme-provider";
 
 export default function App({ Component, pageProps }: AppProps) {
   const [mounted, setMounted] = useState(false);
