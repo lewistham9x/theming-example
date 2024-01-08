@@ -1,9 +1,10 @@
+import React from "react";
 import "~/styles/globals.css";
 import type { AppProps } from "next/app";
 import { useState, useEffect } from "react";
 import { ThemeProvider } from "~/components/theme-provider";
 
-export default function App({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppProps) {
   const [mounted, setMounted] = useState(false);
   useEffect(() => {
     setMounted(true);
@@ -12,6 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
   if (!mounted) {
     return null;
   }
+
   return (
     <ThemeProvider
       attribute="class"
@@ -23,3 +25,5 @@ export default function App({ Component, pageProps }: AppProps) {
     </ThemeProvider>
   );
 }
+
+export default React.memo(App);
