@@ -1,19 +1,8 @@
-import React from "react";
 import "~/styles/globals.css";
 import type { AppProps } from "next/app";
-import { useState, useEffect } from "react";
 import { ThemeProvider } from "~/components/theme-provider";
 
-function App({ Component, pageProps }: AppProps) {
-  const [mounted, setMounted] = useState(false);
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) {
-    return null;
-  }
-
+export default function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider
       attribute="class"
@@ -25,5 +14,3 @@ function App({ Component, pageProps }: AppProps) {
     </ThemeProvider>
   );
 }
-
-export default React.memo(App);
