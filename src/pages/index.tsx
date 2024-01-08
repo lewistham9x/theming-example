@@ -49,7 +49,7 @@ import ToggleWithText from "@/registry/default/example/toggle-with-text";
 import TooltipDemo from "@/registry/default/example/tooltip-demo";
 import { Button } from "@/registry/default/ui/button";
 
-export default function KitchenSinkPage() {
+function KitchenSinkPage() {
   return (
     <div className="container">
       <div className="grid gap-4">
@@ -110,8 +110,8 @@ export default function KitchenSinkPage() {
                 <ButtonLoading />
               </div>
               <div className="flex space-x-2">
-                <Button size="lg">Large</Button>
-                <Button size="sm">Small</Button>
+                <Button>Large</Button>
+                <Button>Small</Button>
               </div>
             </ComponentWrapper>
             <ComponentWrapper>
@@ -208,3 +208,5 @@ function ComponentWrapper({
     </div>
   );
 }
+
+export default KitchenSinkPage;
